@@ -1,0 +1,43 @@
+body {
+	background-color: rgb(40, 40, 40);
+}
+
+.downloadbtn {
+	color: rgb(0, 0, 0);
+	background: blue;
+	border-radius: 10%
+}
+.downloadbtn:hover {
+	background: transparent;
+	border-color: blue;
+	border-width: 12px;
+	transform: linear;
+}
+
+header {
+  background-color: black;
+  border-radius: 10%;
+}
+
+ul {
+  align-items: center;
+  display: flex;
+}
+
+li a {
+	text-decoration: none;
+	color: white;
+}
+
+li {
+  margin: 4px;
+  padding: 10px;
+}
+
+.title {
+	color: cyan;
+}
+
+article {
+	color: white;
+}
