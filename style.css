@@ -34,6 +34,10 @@ li {
   padding: 10px;
 }
 
+img {
+  border-radius: 4%;
+}
+
 .title {
 	color: cyan;
 }
