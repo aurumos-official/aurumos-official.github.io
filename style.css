@@ -1,5 +1,8 @@
 body {
-	background-color: rgb(40, 40, 40);
+
+	background: black;
+	background-position: center;
+	background-color: black;
 }
 
 .downloadbtn {
@@ -11,13 +14,8 @@ body {
 	background: transparent;
 	border-color: blue;
 	border-width: 12px;
-	transform: linear;
 }
 
-header {
-  background-color: black;
-  border-radius: 10%;
-}
 
 ul {
   align-items: center;
@@ -25,6 +23,7 @@ ul {
 }
 
 li a {
+	font-family: sans-serif;
 	text-decoration: none;
 	color: white;
 }
@@ -34,14 +33,152 @@ li {
   padding: 10px;
 }
 
-img {
-  border-radius: 4%;
-}
-
 .title {
 	color: cyan;
 }
 
 article {
 	color: white;
+}
+
+header {
+	background: url(bg.jpg);
+	background-position: center;
+	display: flex;
+	font-family: sans-serif;
+	transition: .5s linear;
+}
+header:hover {
+	background-position: top;
+	transition: .5s linear;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, b=
+lockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, i=
+mg, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i=
+, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, cap=
+tion, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, emb=
+ed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, se=
+ction, summary, time, mark, audio, video { margin: 0px; padding: 0px; borde=
+r: 0px; font: inherit; vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, =
+nav, section { display: block; }
+
+body { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+
+blockquote::before, blockquote::after, q::before, q::after { content: none;=
+ }
+
+table { border-collapse: collapse; border-spacing: 0px; }
+
+
+@charset "utf-8";
+
+.wrapper { max-width: 1140px; padding-left: 1rem; padding-right: 1rem; marg=
+in-left: auto; margin-right: auto; }
+
+*, ::before, ::after { box-sizing: border-box; }
+
+a { text-decoration: none; color: rgb(34, 34, 34); }
+
+html { -webkit-font-smoothing: antialiased; }
+
+body { font-family: Roboto, sans-serif; }
+
+.sr-only { position: absolute; clip: rect(1px, 1px, 1px, 1px); padding: 0px=
+; border: 0px; height: 1px; width: 1px; overflow: hidden; }
+
+.button { appearance: none; color: rgb(255, 255, 255); background-color: rg=
+b(47, 160, 246); min-width: 120px; padding: 0.5rem 1rem; border-radius: 5px=
+; text-align: center; }
+
+.button svg { display: inline-block; vertical-align: middle; width: 24px; h=
+eight: 24px; fill: rgb(255, 255, 255); }
+
+.button span { display: none; }
+
+@media (min-width: 600px) {
+  .button span { display: initial; }
+}
+
+
+.nav__toggle {
+	background-color: black;
+	border-width: 0px;
+	color: white;
+}
+
+.nav__toogle (min-width: 600px) {
+  .button span { display: initial; }
+}
+
+.brand {
+	font-family: fantasy;
+	color: cyan;
+	transition: .3s linear;
+}
+
+.brand:hover {
+	font-size: 30px;
+	transition: .3s linear;
+}
+
+.telegram {
+	display: inline-flex;
+	color: white;
+}
+
+.telegramlink {
+	color: cyan;
+	font-family: sans-serif;
+	font-size: 18px;
+	transition: .5s linear;
+}
+
+.telegramlink:hover {
+	color: blue;
+	font-size: 20px;
+	transition: .5s linear;
+}
+
+.indevtext {
+	font-family: sans-serif;
+}
+
+.navitem {
+	color: white;
+	font-size: 15px;
+	transition: .3s linear;
+}
+
+.navitem:hover {
+	color: cyan;
+	font-size: 18px;
+	transition: .3s linear;
+}
+
+.telegramstatus {
+	background-color: transparent;
+	transition: .5s linear;
+}
+
+.telegramstatus:hover {
+	background: url(128.png);
+	border-radius: 10%;
+	transition: .5s linear;
+}
+
+.active {
+	color: gray;
+	font-size: 15px;
+}
+
+.active:hover {
+	color: gray;
+	font-size: 15px;
 }
