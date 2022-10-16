@@ -2,11 +2,13 @@
 <html>
 <head>
 	<title>AurumOS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 <header>
+  <button onclick="openNav()"><i class="fa fa-bars"></i></button>
 	<div>
     <ul class="navbar" align="center">
       <li><a href="index.html" style="color: #63a5f3;">AurumOS</a></li>
@@ -16,8 +18,20 @@
     </ul>
   </div>
 </header>
-<main>
-
+<main class="download">
+  <div id="older_nav" class="sidenav">
+    <input type="search" placeholder="Search version...">
+    <h5><a href="#d_sect">v0.13</a></h5>
+  </div>
+  <div id="main" class="main">
+    <h4 id="d_sect">Download</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed dolorem repudiandae voluptas alias facilis at, necessitatibus eaque non quos illo inventore! Odio nulla est amet maxime dolorum obcaecati facilis.</p>
+      <div class="download">
+        <button>x86</button>
+        <button>x86_64</button>
+        <button>Mirrors</button>
+      </div>
+  </div>
 </main>
 </body>
 </html>

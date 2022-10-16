@@ -2,11 +2,13 @@
 <html>
 <head>
 	<title>AurumOS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
   <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
   <header>
+    <button onclick="openNav()"><i class="fa fa-bars"></i></button>
     <div class="">
           <ul class="navbar" align="center">
             <li><a href="index.html" style="color: #63a5f3;">AurumOS</a></li>
@@ -14,22 +16,39 @@
             <li><a href="download.html" class="navitem">Download</a></li>
             <li><a href="/wiki">Wiki</a></li>
           </ul>
+          
         </div>
   </header>
   <main class="download" align="center">
-    <div class="sidenav">
+    <div id="older_nav" class="sidenav">
       <div>
       <input type="search" placeholder="Search version...">
       </div>
-      <h5><a href="#">v0.13</a></h5>
-      <h5><a href="#">v0.12.3</a></h5>
-      <h5><a href="#">v0.11</a></h5>
-      <h5><a href="#">v0.10</a></h5>
-      <h5><a href="#">v0.05</a></h5>
+      <h5><a href="#v0.13">v0.13</a></h5>
+      <h5><a href="#v0.12.3">v0.12.3</a></h5>
+      <h5><a href="#v0.11">v0.11</a></h5>
+      <h5><a href="#v0.10">v0.10</a></h5>
+      <h5><a href="#v0.05">v0.05</a></h5>
     </div>
     
-    <div class="main">
-      <a href="download.html">Download</a>
+    <div id="main" class="main">
+      <div class="ver">
+      <h4 id="v0.13">v0.13</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed dolorem repudiandae voluptas alias facilis at, necessitatibus eaque non quos illo inventore! Odio nulla est amet maxime dolorum obcaecati facilis.</p>
+      <div class="download">
+        <button>x86</button>
+        <button>x86_64</button>
+        <button>Mirrors</button>
+      </div>
+      </div>
+      <div class="ver">
+      <h4 id="v0.12.3">v0.12.3</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed dolorem repudiandae voluptas alias facilis at, necessitatibus eaque non quos illo inventore! Odio nulla est amet maxime dolorum obcaecati facilis.</p>
+      </div>
+      <div class="ver">
+      <h4 id="v0.11">v0.11</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed dolorem repudiandae voluptas alias facilis at, necessitatibus eaque non quos illo inventore! Odio nulla est amet maxime dolorum obcaecati facilis.</p>
+      </div>
     </div>
   </main>
 </body>
