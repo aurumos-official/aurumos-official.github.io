@@ -1,184 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+
 body {
-
-	background: black;
-	background-position: center;
-	background-color: black;
-}
-
-.downloadbtn {
-	color: rgb(0, 0, 0);
-	background: blue;
-	border-radius: 10%
-}
-.downloadbtn:hover {
-	background: transparent;
-	border-color: blue;
-	border-width: 12px;
-}
-
-
-ul {
-  align-items: center;
-  display: flex;
-}
-
-li a {
-	font-family: sans-serif;
-	text-decoration: none;
-	color: white;
-}
-
-li {
-  margin: 4px;
-  padding: 10px;
-}
-
-.title {
-	color: cyan;
-}
-
-article {
-	color: white;
+  font-family: 'Ubuntu', sans-serif;
+  background: #c9dbfe;
 }
 
 header {
-	background: url(bg.jpg);
-	background-position: center;
-	display: flex;
-	font-family: sans-serif;
-	transition: .5s linear;
+  display: flex;
+  color: #000510;
+  background: #f2f6ff;
+  margin: 6px;
+  border-radius: 5px;
+  padding: 2px 13px;
 }
-header:hover {
-	background-position: top;
-	transition: .5s linear;
+main{
+  color: #000510;
+  background: #f2f6ff;
+  margin: 6px;
+  border-radius: 5px;
+  padding: 2px 13px;
 }
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, b=
-lockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, i=
-mg, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i=
-, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, cap=
-tion, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, emb=
-ed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, se=
-ction, summary, time, mark, audio, video { margin: 0px; padding: 0px; borde=
-r: 0px; font: inherit; vertical-align: baseline; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, =
-nav, section { display: block; }
-
-body { line-height: 1; }
-
-ol, ul { list-style: none; }
-
-blockquote, q { quotes: none; }
-
-blockquote::before, blockquote::after, q::before, q::after { content: none;=
- }
-
-table { border-collapse: collapse; border-spacing: 0px; }
-
-
-@charset "utf-8";
-
-.wrapper { max-width: 1140px; padding-left: 1rem; padding-right: 1rem; marg=
-in-left: auto; margin-right: auto; }
-
-*, ::before, ::after { box-sizing: border-box; }
-
-a { text-decoration: none; color: rgb(34, 34, 34); }
-
-html { -webkit-font-smoothing: antialiased; }
-
-body { font-family: Roboto, sans-serif; }
-
-.sr-only { position: absolute; clip: rect(1px, 1px, 1px, 1px); padding: 0px=
-; border: 0px; height: 1px; width: 1px; overflow: hidden; }
-
-.button { appearance: none; color: rgb(255, 255, 255); background-color: rg=
-b(47, 160, 246); min-width: 120px; padding: 0.5rem 1rem; border-radius: 5px=
-; text-align: center; }
-
-.button svg { display: inline-block; vertical-align: middle; width: 24px; h=
-eight: 24px; fill: rgb(255, 255, 255); }
-
-.button span { display: none; }
-
-@media (min-width: 600px) {
-  .button span { display: initial; }
+.navbar {
+  list-style-type: none;
+  margin: 15px;
+  display: flex;
+}
+.navbar li {
+  margin:8px;
+  width: 50%;
+  text-align:right;
 }
 
-
-.nav__toggle {
-	background-color: black;
-	border-width: 0px;
-	color: white;
+.navbar a {
+  text-decoration: none;
+  
+  color: #000510;
+  transition: .2s linear;
+}
+.navbar a:hover {
+  
+  text-decoration: none;
+  color: #63a5f3;
+}
+.navbar a:active {
+  text-decoration: none;
+  color: #5294e2;
 }
 
-.nav__toogle (min-width: 600px) {
-  .button span { display: initial; }
+button {
+  color: #63a5f3;
+  background: transparent;
+  border-radius: 5px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: .2s linear;
 }
 
-.brand {
-	font-family: fantasy;
-	color: cyan;
-	transition: .3s linear;
+button:hover {
+  color: #63a5f3;
+  background: #7c818c33;
+  border-radius: 5px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: .2s linear;
 }
-
-.brand:hover {
-	font-size: 30px;
-	transition: .3s linear;
+button:active{
+  color: white;
+  background: #5294e2ff;
+  border-radius: 5px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: .1s linear;
 }
-
-.telegram {
-	display: inline-flex;
-	color: white;
+.HDR1 {
+  color: #63a5f3;
+  background: #7c818c33;
+  margin: 6px;
+  border-radius: 15px;
+  padding: 2px 13px;
+  display: flex;
 }
-
-.telegramlink {
-	color: cyan;
-	font-family: sans-serif;
-	font-size: 18px;
-	transition: .5s linear;
+.HDR1 h4{
+  color: #63a5f3;
+  padding: 2px 13px;
+  margin: 6px;
 }
-
-.telegramlink:hover {
-	color: blue;
-	font-size: 20px;
-	transition: .5s linear;
+.HDR1 p{
+  color: #383c4a;
+  padding: 2px 13px;
+  margin: 6px;
 }
-
+.license{
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+.license_btns {
+  justify-content: flex-end;
+  display: flex;
+}
 .indevtext {
-	font-family: sans-serif;
-}
-
-.navitem {
-	color: white;
-	font-size: 15px;
-	transition: .3s linear;
-}
-
-.navitem:hover {
-	color: cyan;
-	font-size: 18px;
-	transition: .3s linear;
-}
-
-.telegramstatus {
-	background-color: transparent;
-	transition: .5s linear;
-}
-
-.telegramstatus:hover {
-	background: url(128.png);
-	border-radius: 10%;
-	transition: .5s linear;
-}
-
-.active {
-	color: gray;
-	font-size: 15px;
-}
-
-.active:hover {
-	color: gray;
-	font-size: 15px;
+	top: 20vh;
+	height: 100vh;
 }
